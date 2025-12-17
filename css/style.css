@@ -45,11 +45,50 @@ main{
     font-size: 21px;
 }
 /* section man-woman */
+.man-woman{
+    background: linear-gradient(90deg, #f9f6f1 0%, #f9f6f1 50%, #f9e0e0 50%, #f9e0e0 100%);
+}
 .man-woman .container{
     display: flex;
     flex-direction: row;
 }
 .man, .woman{
     width: 50%;
+    padding-top: 60px;
+    padding-bottom: 58px;
+}
+.man{
+    background: url(../img/man.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+.woman{
+    background: url(../img/woman.png) no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    padding-left: 25px;
 
+}
+.man-woman h2{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.man-woman h2 span{
+    font-weight: normal;
+}
+.man-woman p{
+    font-weight: 200;
+}
+
+.man-woman a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D7B399 ;
+    width: 80px;
+    height: 30px;
+    margin-top: 40px;
+}
+.man-woman a:hover{
+    background-color: #947762;
 }
