@@ -21,6 +21,7 @@ main{
 .container{
     max-width: 1110px;
     margin: 0 auto;
+    position: relative;
 }
 /* section delivery */
 .delivery{
@@ -92,3 +93,145 @@ main{
 .man-woman a:hover{
     background-color: #947762;
 }
+
+
+/* section new */
+
+.new .container{
+    padding-top: 193px;
+    padding-bottom: 107px;
+    text-align: center;
+}
+.new h2{
+    font-size: 36px ;
+    text-transform: uppercase;
+}
+.new button{
+    width: 220px;
+    height: 55px;
+    background: #D7B399;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+.new button:hover, .new button:focus{
+    background: #947762;
+}
+.new h3{
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight:bolder;
+    margin-top: 35px;
+    
+}
+.new .card-price{
+    padding-bottom: 25px;
+    color: #D7B399;
+    font-size: 18px;
+    font-weight: bold;
+}
+.new .catalog{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;  
+}
+.card{
+    border:solid #D7B399 3px;
+    width: 22%;
+    min-height: 350px;
+    padding: 22px 0px 25px;
+}
+.card img{
+    width: 85%;
+    
+}
+
+
+/* section wrapper */
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+header{
+    min-height: 800px;
+    background-color: #F9F6F1;
+}
+.header-menu{
+    min-height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.mainmenu_item{
+    margin-right: 35px;
+
+}
+
+
+/* section banner */
+
+.slider_item{
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background: url(../img/running_shoes_PNG5823.png) no-repeat right center;
+}
+.slider_text{
+    font-size: 30px;
+}
+.slider_big-text{
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.button{
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #D7B399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #FFF;
+}
+.slider_price--old{
+    font-size: 24px;
+    text-decoration-line: line-through;
+}
+.slider_price--new{
+    font-size: 42px;
+    color: #d84033;
+}
+.slider_button{
+    position: absolute;
+    top: 50%;
+}
+.slider_button-prev{
+    left: -100px;
+}
+.slider_button-next{
+    right: -100px;
+}
+.banner{
+    padding-top: 90px;
+}
+
+
+/* section dress */
+
