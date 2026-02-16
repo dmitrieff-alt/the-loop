@@ -162,7 +162,7 @@ main{
     flex-direction: row;
 }
 header{
-    min-height: 800px;
+    /* min-height: 800px; */
     background-color: #F9F6F1;
 }
 .header-menu{
@@ -308,8 +308,31 @@ a.button:focus{
 .dress_item-cream{
     background-color: #f9f6f1;
 }
+.navbar-toggler{
+    display: none;
+}
 
 /* media  */
+@media(max-width:1326px){
+    .slider_button-prev{
+        left: 0;
+    }
+    .slider_button-next{
+        right: 0;
+
+    }
+}
+@media(max-width: 1110px){
+    .container{
+        width: auto;
+        padding: 0 30px;
+    }
+    .dress_item{
+        width: 25%;
+    }
+
+}
+
 @media(max-width: 992px){
     .catalog{
         flex-wrap: wrap;
@@ -317,9 +340,39 @@ a.button:focus{
     .card{
         width: 30%;
     }
+    .menu_wrapper{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .logo{
+        order: -1;
+        width: 100%;
+    }
 }
 
 @media(max-width: 768px){
+    .logo{
+        order: -1;
+        width: 70%;
+    }
+   
+    .basket{
+        order:-1;
+        text-align: right;
+    }
+    .banner{
+        height: 200px;
+    }
+    .slider_wrapper{
+        display: none;
+    }
+    .slider_button{
+        display:none;
+
+    }
+    .header{
+        min-height: 90px;
+    }
     .man-woman .container{
         flex-direction: column;
     }
@@ -335,6 +388,24 @@ a.button:focus{
     .card{
         width: 45%;
     }
+    .dress_item{
+        width: 33%;
+    }
+}
+@media(max-width:600px){
+    .banner{
+        height: 100px;
+    }
+    .basket, .menu{
+        display: none;
+        width: 100%;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .mainmenu_list{
+        flex-direction: column;
+    }
 }
 @media(max-width:576px){
     .card{
@@ -347,4 +418,15 @@ a.button:focus{
     .catalog{
         margin-top: 50px;
     }
+    .dress_item{
+        width: 50%;        
+    }
+}
+@media(max-width:320px){
+    .dress_item{
+        width: 90%;
+    }
+}
+.show{
+    display: block;
 }
